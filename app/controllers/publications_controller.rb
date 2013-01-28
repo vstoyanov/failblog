@@ -2,8 +2,12 @@ class PublicationsController < ApplicationController
   # GET /publications
   # GET /publications.json
   def index
-    @publications = Publication.all
-
+    @title = params[:title]
+    if !@title.blank?
+      @publications = Publication.where(["title like ?", "%#{@title}%"])
+    else
+      @publications = Publication.all
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @publications }
