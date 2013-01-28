@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  [id: 1
+  id: 1
   title: MyString
   content: MyString
-  published_on: 
 
 two:
-  [id: 1
-  title: MyString
-  content: MyString
-  published_on: 
+  title: MyString2
+  content: MyString2
+
