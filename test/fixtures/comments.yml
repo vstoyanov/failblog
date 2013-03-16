@@ -1,13 +1,13 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
 one:
-  publication: 
-  text: MyString
-  name: MyString
-  email: MyString
+  id: 1
+  publication_id: 2
+  text: I have an opinion
+  name: user1
+  email: user1@example.com
 
 two:
-  publication: 
-  text: MyString
-  name: MyString
-  email: MyString
+  id: 2
+  publication_id: 2
+  text: I have another opinion
+  name: usre2
+  email: user2@example.com

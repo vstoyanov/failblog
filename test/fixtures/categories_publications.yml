@@ -1,0 +1,11 @@
+one:
+  publication_id: 1
+  category_id: 1
+
+two:
+  publication_id: 2
+  category_id: 1
+
+three:
+  publication_id: 2
+  category_id: 2

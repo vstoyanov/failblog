@@ -1,7 +1,7 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+Entries:
+  id: 1
+  name: Entries
 
-one:
-  name: MyString
-
-two:
-  name: MyString
+Pages:
+  id: 2
+  name: Pages
