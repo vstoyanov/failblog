@@ -11,10 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130128081816) do
+ActiveRecord::Schema.define(:version => 20130316172906) do
 
   create_table "categories", :force => true do |t|
-    t.string   "name"
+    t.string   "name",       :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -23,9 +23,6 @@ ActiveRecord::Schema.define(:version => 20130128081816) do
     t.integer "category_id"
     t.integer "publication_id"
   end
-
-  add_index "categories_publications", ["category_id", "publication_id"], :name => "index_categories_publications_on_category_id_and_publication_id"
-  add_index "categories_publications", ["publication_id", "category_id"], :name => "index_categories_publications_on_publication_id_and_category_id"
 
   create_table "comments", :force => true do |t|
     t.integer  "publication_id"
@@ -36,13 +33,15 @@ ActiveRecord::Schema.define(:version => 20130128081816) do
     t.datetime "updated_at",     :null => false
   end
 
-  add_index "comments", ["publication_id"], :name => "index_comments_on_publication_id"
-
   create_table "publications", :force => true do |t|
-    t.string   "title"
-    t.string   "content"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "title",            :null => false
+    t.string   "content",          :null => false
+    t.boolean  "list_page"
+    t.boolean  "comments_allowed"
+    t.boolean  "live"
+    t.integer  "parent_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
 end

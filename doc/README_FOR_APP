@@ -1,2 +1,6 @@
-Use this README file to introduce your application and point to useful places in the API for learning more.
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+== FAILblog
+This is a very simplistic blog/personal website engine, written in ruby. It's initial goal is to end up serving as CMS
+for http://vstoyanov.eu, the personal webpage of its author.
+Its second major (and primary) goal is self-study and experimentation, so I will try to keep the code-base as cutting
+edge as possible, even at the price of some overkills. On other hand I will try to keep it simple both architecturally
+and codewise
