@@ -18,10 +18,10 @@ class Publication < ActiveRecord::Base
         publication = Publication.find(publication_id)
 
       elsif !publication_id.blank?
-        publication = Publication.where("title LIKE ?", "%#{@publication_id}%")
+        publication = Publication.where('title LIKE ?', "%#{publication_id}%")
 
       else
-          publication = Publication.where("my_id IS ?", nil)
+          publication = Publication.where('parent_id IS ?', nil).first
       end
 
       publication

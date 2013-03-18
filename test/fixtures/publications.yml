@@ -2,11 +2,13 @@ one:
   id: 1
   title: Home
   content: This is home
+  list_page: true
 
 two:
   id: 2
   title: Entry 1
   content: This is entry one
   parent_id: 1
+  list_page: false
 
 

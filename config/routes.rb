@@ -60,5 +60,4 @@ Failblog::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
   match '(:publication)', :to => 'content_delivery#deliver'
-  match '/', :to => 'publications#index'
 end

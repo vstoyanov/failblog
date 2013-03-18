@@ -1,0 +1,5 @@
+<h1><%= @publication.title %></h1>
+<% @publication.children.each do |article| %>
+    <h2><%= article.title %></h2>
+    <p><%= article.content[0..200] %></p>
+<% end %>
