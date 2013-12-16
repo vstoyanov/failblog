@@ -56,6 +56,9 @@ module Failblog
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    # Add fonts to the asset paths
+    config.assets.paths << "#{Rails}/vendor/assets/fonts"
+
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
   end
